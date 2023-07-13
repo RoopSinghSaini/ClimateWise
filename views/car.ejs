@@ -1,0 +1,80 @@
+<%- include("partials/gg"); -%>
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo animate-charcter-head">ClimateAPP</label>
+    <ul>
+      <li><a href="/">Home</a></li>
+
+  </nav>
+  <br><br>
+<br>
+<div class="container">
+
+    <center><h1 class="animate-charcter" style="
+        font-weight: 700; font-size:
+        55px; text-align: center;
+        line-height: 1.2;">Carbon Calculator</h1>
+<br><br><br>
+  <center>
+    <p>
+      <!-- First Form -->
+      <form action="/footprint/car" method="GET" class="form-inline">
+        <div class="form-group">
+            <label for="distance-select">The distance in KM: </label>
+            <input type="text" style="width: 400px; height: 35px" name="distance" id="distance-select" class="">
+            <br>
+          <label for="vehicle-select">The type can be Petrol, Diesel, LPG: </label>
+          <select style="width: 400px; height: 35px" name="vehicle" id="vehicle-select" class="">
+            <option selected hidden disabled >Select a Vehicle
+            </option>
+            <option value="SmallDieselCar">SmallDieselCar</option>
+            <option value="MediumDieselCar">MediumDieselCar</option>
+            <option value="LargeDieselCar">LargeDieselCar</option>
+            <option value="MediumHybridCar">MediumHybridCar</option>
+            <option value="LargeHybridCar">LargeHybridCar</option>
+            <option value="MediumLPGCar">MediumLPGCar</option>
+            <option value="LargeLPGCar">LargeLPGCar</option>
+            <option value="MediumCNGCar">MediumCNGCar</option>
+            <option value="LargeCNGCar">LargeCNGCar</option>
+            <option value="SmallPetrolVan">SmallPetrolVan</option>
+            <option value="LargePetrolVan">LargePetrolVan</option>
+            <option value="SmallDielselVan">SmallDielselVan</option>
+            <option value="MediumDielselVan">MediumDielselVan</option>
+            <option value="LargeDielselVan">LargeDielselVan</option>
+            <option value="LPGVan">LPGVan</option>
+            <option value="CNGVan">CNGVan</option>
+            <option value="SmallPetrolCar">SmallPetrolCar</option>
+            <option value="MediumPetrolCar">MediumPetrolCar</option>
+            <option value="LargePetrolCar">LargePetrolCar</option>
+            <option value="SmallMotorBike">SmallMotorBike</option>
+            <option value="MediumMotorBike">MediumMotorBike</option>
+            <option value="LargeMotorBike">LargeMotorBike</option>
+          </select>
+          <!-- <input type="text" style="width: 400px; height: 35px" name="energy" id="energy-select" class=""> -->
+          <br>
+        
+        
+          <input type="submit" inputmode="search" spellcheck="true"  autocomplete="on" value="Calculate" class="btn btn-primary">
+        </div>        
+      </form>
+    </p>
+  </center>
+  <div class="jumbotron">
+    <% if(carbonEquivalent) { %>
+    <p><%=carbonEquivalent%></p>
+    <% } else { %>
+      <p></p>
+      <% } %>
+    <br>
+  </div>
+ 
+  
+  </div>
+
+</div>
+</div>
+<%- include("partials/footer"); -%>

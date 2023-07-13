@@ -1,0 +1,63 @@
+<%- include("partials/gg"); -%>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo animate-charcter-head">ClimateAPP</label>
+    <ul>
+      <li><a href="/">Home</a></li>
+
+  </nav>
+  <br><br> <br><br>
+
+
+
+<div id="container" style="width:100%; height:400px;"></div>
+
+<% var time=time %>
+<%var temperatue_mean= temperature_mean; %>
+<%var temperatue_min= temperature_min; %>
+<%var temperatue_max= temperature_max; %>
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+var time="<%=time %>"
+var temperatue_mean= "<%temperature_mean %>"
+var temperatue_min= "<%temperature_min %>"
+var temperatue_max= "<%=temperature_max %>"
+    const chart = Highcharts.chart('container', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Climate Change'
+        },
+        xAxis: {
+            title:{
+                text:'Time'
+            },
+            categories: time
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature'
+            }
+        },
+        series: [{
+            name: 'Mean Temperature',
+            data: temperature_mean
+        }, {
+            name: 'Min Temperature',
+            data: temperature_min
+        }
+        , {
+            name: 'Max Temperature',
+            data: temperatue_max
+        }]
+    });
+});
+</script>
+<script type="text/javascript" src="/js/themes/gray.js"></script>
+
+<%- include("partials/footer"); -%>

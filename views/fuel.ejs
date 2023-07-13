@@ -1,0 +1,60 @@
+<%- include("partials/gg"); -%>
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo animate-charcter-head">ClimateAPP</label>
+    <ul>
+      <li><a href="/">Home</a></li>
+
+  </nav>
+  <br><br>
+<br>
+<div class="container">
+
+    <center><h1 class="animate-charcter" style="
+        font-weight: 700; font-size:
+        55px; text-align: center;
+        line-height: 1.2;">Carbon Calculator</h1>
+<br><br><br>
+  <center>
+    <p>
+      <!-- First Form -->
+      <form action="/footprint/fuel" method="GET" class="form-inline">
+        <div class="form-group">
+          <label for="type-select">The type can be Petrol, Diesel, LPG: </label>
+          <select style="width: 400px; height: 35px" name="type" id="type-select" class="">
+            <option selected hidden disabled >Select a Energy
+            </option>
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="LPG">LPG</option>
+          </select>
+          <!-- <input type="text" style="width: 400px; height: 35px" name="energy" id="energy-select" class=""> -->
+          <br>
+          <label for="liters-select">The number of litres to calculate from: </label>
+          <input type="text" style="width: 400px; height: 35px" name="liters" id="liters-select" class="">
+          <br>
+        
+          <input type="submit" inputmode="search" spellcheck="true"  autocomplete="on" value="Calculate" class="btn btn-primary">
+        </div>        
+      </form>
+    </p>
+  </center>
+  <div class="jumbotron">
+    <% if(carbonEquivalent) { %>
+    <p><%=carbonEquivalent%></p>
+    <% } else { %>
+      <p></p>
+      <% } %>
+    <br>
+  </div>
+ 
+  
+  </div>
+
+</div>
+</div>
+<%- include("partials/footer"); -%>

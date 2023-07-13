@@ -1,0 +1,30 @@
+<%- include("partials/gg"); -%>
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo animate-charcter-head">ClimateAPP</label>
+    <ul>
+      <li><a href="/">Home</a></li>
+
+  </nav>
+  <br><br>
+<br> <br>
+
+<div class="container">
+   
+    <% urls.forEach(function(url) { %>
+        <div class="card text-bg-dark">
+            <img src="<%=url%>" class="card-img" alt="This is an image generate using DALLE2.0">
+            <div class="card-img-overlay">
+            </div>
+          </div>
+          <% }) %>
+          <% climateChangeFacts.forEach(function(fact) { %>
+            <p><%=fact%></p>
+            <% }) %>
+</div>
+
+<%- include("partials/footer"); -%>

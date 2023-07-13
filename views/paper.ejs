@@ -1,0 +1,56 @@
+<%- include("partials/gg"); -%>
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo animate-charcter-head">ClimateAPP</label>
+    <ul>
+      <li><a href="/">Home</a></li>
+
+  </nav>
+  <br><br>
+<br>
+<div class="container">
+
+    <center><h1 class="animate-charcter" style="
+        font-weight: 700; font-size:
+        55px; text-align: center;
+        line-height: 1.2;">Carbon Calculator</h1>
+<br><br><br>
+  <center>
+    <p>
+<!-- Second Form -->
+<form aaction="/footprint/paper" method="GET" class="form-inline">
+    <div class="form-group">
+      <label for="weight-select">The weight of the paper: </label>
+      <input type="text" style="width: 400px; height: 35px" name="weight" id="weight-select" class="">
+      <br>
+      <!-- <label for="unit-select">The unit (kg or lb) used for the weight: </label>
+      <input type="text" style="width: 400px; height: 35px" name="unit" id="unit-select" class=""> -->
+      <select style="width: 400px; height: 35px" name="unit" id="unit-select" class="custom-select breed form-control">
+        <option selected hidden disabled >Select a Unit
+        </option>
+        <option value="kg">kg</option>
+        <option value="lb">lb</option>
+      <br>
+      <input type="submit" inputmode="search" spellcheck="true"  autocomplete="on" value="Search" class="btn btn-primary">
+    </div>
+  </form>
+</p>
+</center>
+<div class="jumbotron">
+  <% if(numberOfTrees) { %>
+  <p><%=numberOfTrees%></p>
+  <% } else { %>
+    <p></p>
+    <% } %> 
+  <br>
+</div>
+
+</div>
+
+</div>
+</div>
+<%- include("partials/footer"); -%>
