@@ -1,7 +1,15 @@
-# Fullstack Chat project
+# Fullstack ClimateAPP project
 
-This project allows to setup fullstack chat for any frontend/backend combination!
+This project has the follosing features:
 
-Connect React, Vue, or Angular and any backend you wish!
+1. Community Forum
+ 
+2. Climate News Aggrigator
 
-This should fully support all your fullstack chat needs!
+3. Carbon Calculator with 7 sub categories
+
+4. Interactive Climate Data Graphs and Charts
+
+5. Interiguing Facts with graphics that summarizes climate related issues
+
+
