@@ -1,4 +1,4 @@
-# Fullstack ClimateWise project
+# Fullstack ClimateWise Application
 
 This project has the follosing features:
 1. Community Forum
