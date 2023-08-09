@@ -8,6 +8,6 @@ This project has the follosing features:
 6. Aggregator of organizations working on climate change related initiatives to support their projects in order to offset people's carbon footprint.
 7. Push notifications with facts.
 8. Widgets with facts and An images on mobile phone: Interiguing Facts with graphics that summarizes climate related issues using OpenAI's gpt and DALLE API.
-9. climate friendly product recommendation.
+9. Climate friendly product recommendation using ML.
 
 
