@@ -25,7 +25,7 @@ a:hover {
 	height: 70px;
   position: absolute;
 	background-color:
-  rgb(26, 178, 255);
+  lightgreen;
   bottom: 0;
   left: 0;
 }
@@ -60,7 +60,7 @@ a:hover {
 
 
 .search{
-  background-color:#0082e6;
+  background-color: darkgreen;
   border-radius: 1px;
   width: 400px;
   height: 70px;
@@ -90,14 +90,14 @@ body{
   font-family: montserrat;
 }
 nav{
-  background: #0082e6;
+  background: lightgreen;
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 9999;
 }
 label.logo{
-  color: white;
+  color: black;
   font-size: 35px;
   line-height: 80px;
   padding: 0 50px;
@@ -113,7 +113,7 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: white;
+  color: black;
   font-size: 17px;
   padding: 7px 5px;
   border-radius: 3px;
@@ -125,7 +125,7 @@ a.active,a:hover{
 }
 .checkbtn{
   font-size: 30px;
-  color: #ffffff;
+  color: black;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -238,4 +238,3 @@ a.active,a:hover{
     background-position: 200% center;
   }
 }
-
